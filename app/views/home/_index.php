@@ -16,6 +16,26 @@
                     echo 'CONNEXION ADMIN';
                 }
                 ?>
+                <br>
+                <br>
+                <?php
+                $manager->getproduit();
+                $manager->getcategorie();
+
+                foreach ($manager->getcategorie() as $donnees)
+                {
+                    $categorie = New Categorie($donnees);
+                    echo $categorie->getLibelleCat()."<br>";
+                }
+
+
+                foreach ($manager->getproduit() as $donnees)
+                {
+                    $produit = New Produit($donnees);
+                    echo $produit->getLibelleProd()."<br>";
+                }
+                
+                ?>
 
             </div>
 

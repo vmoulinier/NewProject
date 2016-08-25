@@ -14,5 +14,19 @@ class Manager
         $stmt = $this->bdd->prepare("SELECT * FROM user WHERE id=:id");
         $stmt->execute(array(":id"=>$id));
     }
-    
+
+    public function getproduit()
+    {
+        $q = $this->bdd->query("SELECT * FROM produit");
+        $getproduit = $q->fetchAll();
+        return $getproduit;
+    }
+
+    public function getcategorie()
+    {
+        $q = $this->bdd->query("SELECT * FROM categorie");
+        $getcategorie = $q->fetchAll();
+        return $getcategorie;
+    }
+
 }

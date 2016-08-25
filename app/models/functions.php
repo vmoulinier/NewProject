@@ -36,3 +36,5 @@ function redirect($url)
 {
     header("Location: http://localhost/appmvc/public/$url");
 }
+
+

@@ -29,5 +29,5 @@
     <script src="../../public/js/validation.min.js"></script>
     <script src="../../public/js/script.js"></script>
     <script src="../../public/js/bootstrap-filestyle.js"> </script>
-    <?php include_once 'C:/wamp/www/appmvc/app/models/db_connect.php' ?>
+    <?php require_once 'C:/wamp/www/appmvc/app/models/db_connect.php' ?>
 </head>

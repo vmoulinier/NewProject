@@ -11,10 +11,6 @@ $('document').ready(function()
 			minlength: 8,
 			maxlength: 15
 			},
-			cpassword: {
-			required: true,
-			equalTo: '#password'
-			},
 			user_email: {
             required: true,
             email: true

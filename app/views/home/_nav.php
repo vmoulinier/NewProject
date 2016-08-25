@@ -11,7 +11,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index">Accueil</a></li>
+                <li><a href="index">Accueil</a></li>
                 <?php
                 if(is_loggedin())
                 {
@@ -29,11 +29,11 @@
                 <?php
                 if(is_loggedin())
                 {
-                    echo '<li><a class="cd-signin" href="logout">Deconnexion</a></li>';
+                    echo '<li><a class="cd-signin" href="logout"><button class="btn btn-primary">Deconnexion</button></a></li>';
                 }
                 else
                 {
-                    echo '<li class="main-nav"><a class="cd-signin" href="#0">Connexion</a></li>';
+                    echo '<li class="main-nav "><a class="cd-signin" href="#0"><button class="btn btn-primary">Connexion</button></a></li>';
                 }
                 ?>
 

@@ -10,8 +10,9 @@ catch (Exception $e)
     die('Erreur : ' . $e->getMessage());
 }
 
-include_once 'entity/manager.php';
-include_once 'entity/user.php';
-include_once 'C:/wamp/www/appmvc/app/models/functions.php';
+require_once 'entity/manager.php';
+require_once 'entity/user.php';
+require_once 'entity/produit.php';
+require_once 'entity/categorie.php';
 $manager = new Manager($bdd);
 session_start();

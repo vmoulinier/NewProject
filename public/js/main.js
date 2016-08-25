@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
 	//open modal
 	mainNav.on('click', function(event){
 		$(event.target).is(mainNav) && mainNav.children('ul').toggleClass('is-visible');
+		$('nav').fadeOut(100);
 	});
 
 	//open sign-up form
@@ -24,6 +25,7 @@ jQuery(document).ready(function($){
 	formModal.on('click', function(event){
 		if( $(event.target).is(formModal) || $(event.target).is('.cd-close-form') ) {
 			formModal.removeClass('is-visible');
+			$('nav').fadeIn(400);
 		}	
 	});
 	//close modal when clicking the esc keyboard button

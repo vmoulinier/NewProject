@@ -1,5 +1,6 @@
 <?php
 include_once 'db_connect.php';
+include_once 'functions.php';
 
 if(isset($_FILES['avatar'])) {
 
@@ -41,5 +42,5 @@ if(isset($_FILES['avatar'])) {
     }
 
     setcookie("erreur", $erreur, time()+3);
-    $manager->redirect("profile");
+    redirect("home/profile");
 }
